@@ -2,6 +2,8 @@
 *Under construction!*
 
 This repository contains 32 mixed-variable analytical problems with categorical and quantitative variables for benchmarking. Half of the problems are constrained. 
+
+## Summary and problem characteristics
 The following two tables present the characteristics of the unconstrained and constrained problems, respectively. The star symbol represents a user-chosen parameter. 
 
 **Table 1:** Unconstrained test problems.
@@ -47,7 +49,52 @@ The following two tables present the characteristics of the unconstrained and co
 | Cat-cstrs-15  | 1          | 10     | 0                | 4                  | 2   | Yes    | [4]  | Toy                   |
 | Cat-cstrs-16  | 1          | 6      | 4                | 6                  | 3   | Yes    | [3]  | Wong-2                |
 
-### References
+## Best known feasible solutions: 13 June 2025
+
+**Table 3:** Best known values for unconstrained problems.
+
+| Problem   | $f(x_{\text{best}})$ |
+|-----------|----------------------|
+| Cat-1     | 21.71                |
+| Cat-2     | 3.12E-12             |
+| Cat-3     | 4.87                 |
+| Cat-4     | 1.06E4               |
+| Cat-5     | -31250.5             |
+| Cat-6     | 38.08                |
+| Cat-7     | 5                    |
+| Cat-8     | -152                 |
+| Cat-9     | -2                   |
+| Cat-10    | 1.03                 |
+| Cat-11    | -113.71              |
+| Cat-12    | -102.51              |
+| Cat-13    | -0.71                |
+| Cat-14    | 0.14                 |
+| Cat-15    | -1942.82             |
+| Cat-16    | 1                    |
+
+**Table 4:** Best known feasible values for constrained problems.
+
+| Problem       | $f(x_{\text{best}})$ |
+|---------------|----------------------|
+| Cat-cstrs-1   | 1.27E-03             |
+| Cat-cstrs-2   | -5.1273              |
+| Cat-cstrs-3   | 4.30E-03             |
+| Cat-cstrs-4   | -24245741.22         |
+| Cat-cstrs-5   | -77237.8             |
+| Cat-cstrs-6   | 555.58               |
+| Cat-cstrs-7   | 38.8                 |
+| Cat-cstrs-8   | 10                   |
+| Cat-cstrs-9   | -1256527.34          |
+| Cat-cstrs-10  | 1.47E-09             |
+| Cat-cstrs-11  | 6184.75              |
+| Cat-cstrs-12  | 303.4                |
+| Cat-cstrs-13  | 19210.88             |
+| Cat-cstrs-14  | -66.68               |
+| Cat-cstrs-15  | 3                    |
+| Cat-cstrs-16  | -9721.58             |
+
+
+## References
 
 [1] A.-S. Crélot, C. Beauthier, D. Orban, C. Sainvitu, and A. Sartenaer.  
 *Combining Surrogate Strategies with MADS for Mixed-Variable Derivative-Free Optimization.*  
