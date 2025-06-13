@@ -6,7 +6,7 @@ The following two tables present the characteristics of the unconstrained and co
 
 **Table 1:** Unconstrained test problems.
 
-| Name    | $n^{\cat}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | Smooth | Ref. | Original problem     |
+| Name    | $n^{\text{cat}}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | Smooth | Ref. | Original problem     |
 |---------|------------|--------|------------------|--------------------|--------|------|----------------------|
 | Cat-1   | 2          | 9      | 2                | $\star$            | No     | [2]  | Ackley              |
 | Cat-2   | 2          | 9      | 2                | 3                  | No     | [2]  | Beale               |
@@ -28,7 +28,7 @@ The following two tables present the characteristics of the unconstrained and co
 
 **Table 2:** Constrained test problems.
 
-| Name          | $n^{\cat}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | $m$ | Smooth | Ref. | Original problem       |
+| Name          | $n^{\text{cat}}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | $m$ | Smooth | Ref. | Original problem       |
 |---------------|------------|--------|------------------|--------------------|-----|--------|------|------------------------|
 | Cat-cstrs-1   | 2          | 9      | 2                | 3                  | 3   | No     | [2]  | Beale                 |
 | Cat-cstrs-2   | 2          | 4      | 2                | 2                  | 1   | Yes    | [5]  | Augmented-Branin      |
