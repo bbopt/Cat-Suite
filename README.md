@@ -49,7 +49,7 @@ The following two tables present the characteristics of the unconstrained and co
 | Cat-cstrs-15  | 1          | 10     | 0                | 4                  | 2   | Yes    | [4]  | Toy                   |
 | Cat-cstrs-16  | 1          | 6      | 4                | 6                  | 3   | Yes    | [3]  | Wong-2                |
 
-## Best known feasible solutions: 13 June 2025
+## Best known feasible values: 13 June 2025
 
 **Table 3:** Best known values for unconstrained problems.
 
