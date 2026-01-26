@@ -3,10 +3,6 @@
 
 This repository contains 60 mixed-variable analytical problems with categorical and quantitative variables for benchmarking. Half of the problems are constrained. 
 
-## Summary and problem characteristics
-The following two tables present the characteristics of the unconstrained and constrained problems, respectively. The star symbol represents a user-chosen parameter. 
-
-
 ## Citation
 
 If you use this benchmark collection in your work, please cite:
@@ -16,6 +12,9 @@ Cat-Suite: A collection of optimization problems with categorical and quantitati
 Technical Report G-2025-29, Les cahiers du GERAD, 2025.
 Available at: https://www.gerad.ca/fr/papers/G-2025-39
 
+
+## Summary and problem characteristics
+The following two tables present the characteristics of the unconstrained and constrained problems, respectively. The star symbol represents a user-chosen parameter. 
 
 
 **Table 1:** Unconstrained test problems.
