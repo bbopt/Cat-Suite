@@ -1,7 +1,7 @@
 # Cat-Suite: a collection of optimization problems with categorical and quantitative variables for benchmarking
 *Under construction!*
 
-This repository contains 32 mixed-variable analytical problems with categorical and quantitative variables for benchmarking. Half of the problems are constrained. 
+This repository contains 60 mixed-variable analytical problems with categorical and quantitative variables for benchmarking. Half of the problems are constrained. 
 
 ## Summary and problem characteristics
 The following two tables present the characteristics of the unconstrained and constrained problems, respectively. The star symbol represents a user-chosen parameter. 
