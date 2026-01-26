@@ -8,24 +8,38 @@ The following two tables present the characteristics of the unconstrained and co
 
 **Table 1:** Unconstrained test problems.
 
-| Name    | $n^{\text{cat}}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | Smooth | Ref. | Original problem     |
-|---------|------------|--------|------------------|--------------------|--------|------|----------------------|
-| Cat-1   | 2          | 9      | 2                | $\star$            | No     | [2]  | Ackley              |
-| Cat-2   | 2          | 9      | 2                | 3                  | No     | [2]  | Beale               |
-| Cat-3   | 2          | 4      | 2                | 2                  | Yes    | [5]  | Augmented-Branin    |
-| Cat-4   | 2          | 4      | 2                | 4                  | No     | [2]  | Bukin-6             |
-| Cat-5   | 1          | 6      | 1                | 3                  | Yes    | [3]  | EVD-52              |
-| Cat-6   | 2          | 9      | 0                | 2                  | Yes    | [5]  | Goldstein           |
-| Cat-7   | 3          | 16     | 3                | 2                  | No     | [2]  | Goldstein-Price     |
-| Cat-8   | 1          | 4      | 1                | 5                  | Yes    | [3]  | HS78                |
-| Cat-9   | 2          | 9      | 2                | $\star$            | No     | [2]  | Rastrigin           |
-| Cat-10  | 2          | 6      | 2                | $\star$            | No     | [2]  | Rosenbrock          |
-| Cat-11  | 1          | 4      | 1                | 4                  | Yes    | [3]  | Rosen-Suzuki        |
-| Cat-12  | 1          | 5      | $\star$          | $\star$            | No     | [2]  | Styblinski-Tang     |
-| Cat-13  | 1          | 10     | 0                | 4                  | Yes    | [4]  | Toy                 |
-| Cat-14  | 1          | 10     | 0                | 8                  | No     | [4]  | Toy                 |
-| Cat-15  | 1          | 5      | 3                | 4                  | Yes    | [3]  | Wong-1              |
-| Cat-16  | 2          | 9      | 2                | $e$                | No     | [2]  | Zakharov            |
+| Name    | $n^{\text{cat}}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | Smooth | Ref. | Original problem |
+|---------|------------------|--------|------------------|-------------------|--------|------|------------------|
+| Cat-1   | 2 | 9  | 2       | $\star$ | No  | [3] | Ackley |
+| Cat-2   | 2 | 9  | 2       | 3       | No  | [3] | Beale |
+| Cat-3   | 2 | 4  | 2       | 2       | Yes | [6] | Augmented-Branin |
+| Cat-4   | 2 | 4  | 2       | 4       | No  | [3] | Bukin-6 |
+| Cat-5   | 1 | 6  | 1       | 3       | Yes | [4] | EVD-52 |
+| Cat-6   | 2 | 9  | 0       | 2       | Yes | [6] | Goldstein |
+| Cat-7   | 3 | 16 | 3       | 2       | No  | [3] | Goldstein-Price |
+| Cat-8   | 1 | 4  | 1       | 5       | Yes | [4] | HS78 |
+| Cat-9   | 2 | 9  | 2       | $\star$ | No  | [3] | Rastrigin |
+| Cat-10  | 2 | 6  | 2       | $\star$ | No  | [3] | Rosenbrock |
+| Cat-11  | 1 | 4  | 1       | 4       | Yes | [4] | Rosen-Suzuki |
+| Cat-12  | 1 | 5  | $\star$ | $\star$ | No  | [3] | Styblinski-Tang |
+| Cat-13  | 1 | 10 | 0       | 4       | Yes | [5] | Toy |
+| Cat-14  | 1 | 10 | 0       | 8       | No  | [5] | Toy |
+| Cat-15  | 1 | 5  | 3       | 4       | Yes | [4] | Wong-1 |
+| Cat-16  | 2 | 9  | 2       | $\star$ | No  | [3] | Zakharov |
+| Cat-17  | 2 | 49 | 1       | 7       | No  | [8] | Ishigami |
+| Cat-18  | 2 | 100 | 1      | 7       | No  | [8] | Hartmann |
+| Cat-19  | 2 | 64 | 0       | $\star$ | No  | [8] | Levy |
+| Cat-20  | 3 | 80 | 2       | 4       | No  | [8] | Camel |
+| Cat-21  | 1 | 61 | 0       | 4       | No  | [4] | Gamma |
+| Cat-22  | 1 | 51 | 0       | 6       | Yes | [4] | EVD-61 |
+| Cat-23  | 3 | 12 | 0       | 5       | No  | [2] | Hal-04 |
+| Cat-24  | 1 | 21 | 2       | 3       | Yes | [4] | OET5 |
+| Cat-25  | 1 | 18 | 10      | 10      | Yes | [4] | Wong 3 |
+| Cat-26  | 1 | 10 | 3       | 5       | Yes | [7] | Roustant |
+| Cat-27  | 2 | 100 | 1      | 4       | Yes | [1] | Kowalik-Osborne |
+| Cat-28  | 2 | 36 | 0       | 2       | Yes | [3] | Three-Hump |
+| Cat-29  | 2 | 64 | 3       | 4       | Yes | [3] | McCormick |
+| Cat-30  | 4 | 81 | 4       | 6       | Yes | [3] | Shekel |
 
 
 **Table 2:** Constrained test problems.
