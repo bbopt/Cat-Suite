@@ -96,22 +96,34 @@ The following two tables present the characteristics of the unconstrained and co
 
 ## References
 
-[1] A.-S. Crélot, C. Beauthier, D. Orban, C. Sainvitu, and A. Sartenaer.  
-*Combining Surrogate Strategies with MADS for Mixed-Variable Derivative-Free Optimization.*  
+[1] A.-S. Crélot, C. Beauthier, D. Orban, C. Sainvitu, and A. Sartenaer.
+Combining Surrogate Strategies with MADS for Mixed-Variable Derivative-Free Optimization.
 Technical Report G-2017-70, Les cahiers du GERAD, 2017.
 
-[2] M. Jamil and X.-S. Yang.  
-*A literature survey of benchmark functions for global optimisation problems.*  
+[2] M. Halstrup.
+Black-Box Optimization of Mixed Discrete-Continuous Optimization Problems.
+PhD thesis, Technical University of Denmark, 2016.
+
+[3] M. Jamil and X.-S. Yang.
+A literature survey of benchmark functions for global optimisation problems.
 International Journal of Mathematical Modelling and Numerical Optimisation, 4(2):150–194, 2013.
 
-[3] L. Lukšan and J. Vlček.  
-*Test Problems for Nonsmooth Unconstrained and Linearly Constrained Optimization.*  
+[4] L. Lukšan and J. Vlček.
+Test Problems for Nonsmooth Unconstrained and Linearly Constrained Optimization.
 Technical Report V-798, ICS AS CR, 2000.
 
-[4] M. Munoz Zuniga and D. Sinoquet.  
-*Global optimization for mixed categorical-continuous variables based on Gaussian process models with a randomized categorical space exploration step.*  
+[5] M. Munoz Zuniga and D. Sinoquet.
+Global optimization for mixed categorical-continuous variables based on Gaussian process models with a randomized categorical space exploration step.
 INFOR: Information Systems and Operational Research, 58(2):310–341, 2020.
 
-[5] J. Pelamatti, L. Brevault, M. Balesdent, E.-G. Talbi, and Y. Guerin.  
-*Efficient global optimization of constrained mixed variable problems.*  
+[6] J. Pelamatti, L. Brevault, M. Balesdent, E.-G. Talbi, and Y. Guerin.
+Efficient global optimization of constrained mixed variable problems.
 Journal of Global Optimization, 73(3):583–613, 2019.
+
+[7] T. Ray and K. M. Liew.
+A Swarm Metaphor for Multiobjective Design Optimization.
+Engineering Optimization, 34(2):141–153, 2002.
+
+[8] S. Surjanovic and D. Bingham.
+Virtual Library of Simulation Experiments: Test Functions and Datasets.
+Technical Report, Simon Fraser University, 2025.
