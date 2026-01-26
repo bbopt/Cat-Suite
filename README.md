@@ -6,6 +6,21 @@ This repository contains 60 mixed-variable analytical problems with categorical 
 ## Summary and problem characteristics
 The following two tables present the characteristics of the unconstrained and constrained problems, respectively. The star symbol represents a user-chosen parameter. 
 
+## Citation
+
+If you use this benchmark suite in your work, please cite:
+
+## Citation
+
+If you use this benchmark suite in your work, please cite:
+
+Hallé-Hannan, E., Audet, C., Diouane, Y., Le Digabel, S., and Tribes, C.
+Cat-Suite: A collection of optimization problems with categorical and quantitative variables for benchmarking.
+Technical Report G-2025-29, Les cahiers du GERAD, 2025.
+Available at: https://www.gerad.ca/fr/papers/G-2025-39
+
+
+
 **Table 1:** Unconstrained test problems.
 
 | Name | $n^{cat}$ | $\ell$ | $n^{int}$ | $n^{cont}$ | Smooth | Ref. | Original problem |
