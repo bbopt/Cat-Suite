@@ -8,60 +8,77 @@ The following two tables present the characteristics of the unconstrained and co
 
 **Table 1:** Unconstrained test problems.
 
-| Name    | $n^{\text{cat}}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | Smooth | Ref. | Original problem |
-|---------|------------------|--------|------------------|-------------------|--------|------|------------------|
-| Cat-1   | 2 | 9  | 2       | $\star$ | No  | [3] | Ackley |
-| Cat-2   | 2 | 9  | 2       | 3       | No  | [3] | Beale |
-| Cat-3   | 2 | 4  | 2       | 2       | Yes | [6] | Augmented-Branin |
-| Cat-4   | 2 | 4  | 2       | 4       | No  | [3] | Bukin-6 |
-| Cat-5   | 1 | 6  | 1       | 3       | Yes | [4] | EVD-52 |
-| Cat-6   | 2 | 9  | 0       | 2       | Yes | [6] | Goldstein |
-| Cat-7   | 3 | 16 | 3       | 2       | No  | [3] | Goldstein-Price |
-| Cat-8   | 1 | 4  | 1       | 5       | Yes | [4] | HS78 |
-| Cat-9   | 2 | 9  | 2       | $\star$ | No  | [3] | Rastrigin |
-| Cat-10  | 2 | 6  | 2       | $\star$ | No  | [3] | Rosenbrock |
-| Cat-11  | 1 | 4  | 1       | 4       | Yes | [4] | Rosen-Suzuki |
-| Cat-12  | 1 | 5  | $\star$ | $\star$ | No  | [3] | Styblinski-Tang |
-| Cat-13  | 1 | 10 | 0       | 4       | Yes | [5] | Toy |
-| Cat-14  | 1 | 10 | 0       | 8       | No  | [5] | Toy |
-| Cat-15  | 1 | 5  | 3       | 4       | Yes | [4] | Wong-1 |
-| Cat-16  | 2 | 9  | 2       | $\star$ | No  | [3] | Zakharov |
-| Cat-17  | 2 | 49 | 1       | 7       | No  | [8] | Ishigami |
-| Cat-18  | 2 | 100 | 1      | 7       | No  | [8] | Hartmann |
-| Cat-19  | 2 | 64 | 0       | $\star$ | No  | [8] | Levy |
-| Cat-20  | 3 | 80 | 2       | 4       | No  | [8] | Camel |
-| Cat-21  | 1 | 61 | 0       | 4       | No  | [4] | Gamma |
-| Cat-22  | 1 | 51 | 0       | 6       | Yes | [4] | EVD-61 |
-| Cat-23  | 3 | 12 | 0       | 5       | No  | [2] | Hal-04 |
-| Cat-24  | 1 | 21 | 2       | 3       | Yes | [4] | OET5 |
-| Cat-25  | 1 | 18 | 10      | 10      | Yes | [4] | Wong 3 |
-| Cat-26  | 1 | 10 | 3       | 5       | Yes | [7] | Roustant |
-| Cat-27  | 2 | 100 | 1      | 4       | Yes | [1] | Kowalik-Osborne |
-| Cat-28  | 2 | 36 | 0       | 2       | Yes | [3] | Three-Hump |
-| Cat-29  | 2 | 64 | 3       | 4       | Yes | [3] | McCormick |
-| Cat-30  | 4 | 81 | 4       | 6       | Yes | [3] | Shekel |
+| Name | $n^{\cat}$ | $\ell$ | $n^{\integer}$ | $n^{\continuous}$ | Smooth | Ref. | Original problem |
+|------|-------------|--------|----------------|-------------------|--------|------|------------------|
+| Cat-1  | 2 | 9 | 2 | $\star$ | No | [4] | Ackley |
+| Cat-2  | 2 | 9 | 2 | 3 | No | [4] | Beale |
+| Cat-3  | 2 | 4 | 2 | 2 | Yes | [7] | Augmented-Branin |
+| Cat-4  | 2 | 4 | 2 | 4 | No | [4] | Bukin-6 |
+| Cat-5  | 1 | 6 | 1 | 3 | Yes | [5] | EVD-52 |
+| Cat-6  | 2 | 9 | 0 | 2 | Yes | [7] | Goldstein |
+| Cat-7  | 3 | 16 | 3 | 2 | No | [4] | Goldstein-Price |
+| Cat-8  | 1 | 4 | 1 | 5 | Yes | [5] | HS78 |
+| Cat-9  | 2 | 9 | 2 | $\star$ | No | [4] | Rastrigin |
+| Cat-10 | 2 | 6 | 2 | $\star$ | No | [4] | Rosenbrock |
+| Cat-11 | 1 | 4 | 1 | 4 | Yes | [5] | Rosen-Suzuki |
+| Cat-12 | 1 | 5 | $\star$ | $\star$ | No | [4] | Styblinski-Tang |
+| Cat-13 | 1 | 10 | 0 | 4 | Yes | [6] | Toy |
+| Cat-14 | 1 | 10 | 0 | 8 | No | [6] | Toy |
+| Cat-15 | 1 | 5 | 3 | 4 | Yes | [5] | Wong-1 |
+| Cat-16 | 2 | 9 | 2 | $\star$ | No | [4] | Zakharov |
+| Cat-17 | 2 | 49 | 1 | 7 | No | [9] | Ishigami |
+| Cat-18 | 2 | 100 | 1 | 7 | No | [9] | Hartmann |
+| Cat-19 | 2 | 64 | 0 | $\star$ | No | [9] | Levy |
+| Cat-20 | 3 | 80 | 2 | 4 | No | [9] | Camel |
+| Cat-21 | 1 | 61 | 0 | 4 | No | [5] | Gamma |
+| Cat-22 | 1 | 51 | 0 | 6 | Yes | [5] | EVD-61 |
+| Cat-23 | 3 | 12 | 0 | 5 | No | [3] | Hal-04 |
+| Cat-24 | 1 | 21 | 2 | 3 | Yes | [5] | OET5 |
+| Cat-25 | 1 | 18 | 10 | 10 | Yes | [5] | Wong 3 |
+| Cat-26 | 1 | 10 | 3 | 5 | Yes | [1] | Roustant |
+| Cat-27 | 2 | 100 | 1 | 4 | Yes | [1] | Kowalik-Osborne |
+| Cat-28 | 2 | 36 | 0 | 2 | Yes | [4] | Three-Hump |
+| Cat-29 | 2 | 64 | 3 | 4 | Yes | [4] | McCormick |
+| Cat-30 | 4 | 81 | 4 | 6 | Yes | [4] | Shekel |
 
 
 **Table 2:** Constrained test problems.
 
-| Name          | $n^{\text{cat}}$ | $\ell$ | $n^{\text{int}}$ | $n^{\text{cont}}$ | $m$ | Smooth | Ref. | Original problem       |
-|---------------|------------|--------|------------------|--------------------|-----|--------|------|------------------------|
-| Cat-cstrs-1   | 2          | 9      | 2                | 3                  | 3   | No     | [2]  | Beale                 |
-| Cat-cstrs-2   | 2          | 4      | 2                | 2                  | 1   | Yes    | [5]  | Augmented-Branin      |
-| Cat-cstrs-3   | 2          | 9      | 2                | 4                  | 2   | No     | [2]  | Bukin-6               |
-| Cat-cstrs-4   | 1          | 4      | 4                | 4                  | 3   | Yes    | [3]  | Dembo-5               |
-| Cat-cstrs-5   | 1          | 6      | 1                | 3                  | 1   | No     | [3]  | EVD-52                |
-| Cat-cstrs-6   | 2          | 9      | 2                | 3                  | 4   | Yes    | [1]  | G-09                  |
-| Cat-cstrs-7   | 2          | 9      | 0                | 2                  | 1   | Yes    | [5]  | Goldstein             |
-| Cat-cstrs-8   | 2          | 25     | 2                | 2                  | 2   | Yes    | [2]  | Himmelblau            |
-| Cat-cstrs-9   | 2          | 4      | 3                | 5                  | 4   | Yes    | [3]  | HS-114                |
-| Cat-cstrs-10  | 1          | 3      | 2                | 4                  | 6   | Yes    | [3]  | Pentagon              |
-| Cat-cstrs-11  | 1          | 8      | 2                | 2                  | 3   | Yes    | [1]  | Pressure-Vessel       |
-| Cat-cstrs-12  | 2          | 25     | 1                | 2                  | 2   | Yes    | [1]  | Reinforced-Concrete   |
-| Cat-cstrs-13  | 2          | 6      | 2                | $\star$            | 1   | No     | [2]  | Rosenbrock            |
-| Cat-cstrs-14  | 1          | 5      | $\star$          | $\star$            | 2   | No     | [2]  | Styblinski–Tang       |
-| Cat-cstrs-15  | 1          | 10     | 0                | 4                  | 2   | Yes    | [4]  | Toy                   |
-| Cat-cstrs-16  | 1          | 6      | 4                | 6                  | 3   | Yes    | [3]  | Wong-2                |
+| Name | $n^{\cat}$ | $\ell$ | $n^{\integer}$ | $n^{\continuous}$ | $m$ | Smooth | Ref. | Original problem |
+|------|-------------|--------|----------------|-------------------|-----|--------|------|------------------|
+| Cat-cstrs-1 | 2 | 9 | 2 | 3 | 3 | No | [4] | Beale |
+| Cat-cstrs-2 | 2 | 4 | 2 | 2 | 1 | Yes | [7] | Augmented-Branin |
+| Cat-cstrs-3 | 2 | 9 | 2 | 4 | 2 | No | [4] | Bukin-6 |
+| Cat-cstrs-4 | 1 | 4 | 4 | 4 | 3 | Yes | [5] | Dembo-5 |
+| Cat-cstrs-5 | 1 | 6 | 1 | 3 | 1 | No | [5] | EVD-52 |
+| Cat-cstrs-6 | 2 | 9 | 2 | 3 | 4 | Yes | [1] | G-09 |
+| Cat-cstrs-7 | 2 | 9 | 0 | 2 | 1 | Yes | [7] | Goldstein |
+| Cat-cstrs-8 | 2 | 25 | 2 | 2 | 2 | Yes | [4] | Himmelblau |
+| Cat-cstrs-9 | 2 | 4 | 3 | 5 | 4 | Yes | [5] | HS-114 |
+| Cat-cstrs-10 | 1 | 3 | 2 | 4 | 6 | Yes | [5] | Pentagon |
+| Cat-cstrs-11 | 1 | 8 | 2 | 2 | 3 | Yes | [1] | Pressure-Vessel |
+| Cat-cstrs-12 | 2 | 25 | 1 | 2 | 2 | Yes | [1] | Reinforced-Concrete |
+| Cat-cstrs-13 | 2 | 6 | 2 | $\star$ | 1 | No | [4] | Rosenbrock |
+| Cat-cstrs-14 | 1 | 5 | $\star$ | $\star$ | 2 | No | [4] | Styblinski–Tang |
+| Cat-cstrs-15 | 1 | 10 | 0 | 4 | 2 | Yes | [6] | Toy |
+| Cat-cstrs-16 | 1 | 6 | 4 | 6 | 3 | Yes | [5] | Wong-2 |
+| Cat-cstrs-17 | 2 | 64 | 0 | 6 | 11 | No | [1] | Speed-reducer |
+| Cat-cstrs-18 | 1 | 50 | 2 | 2 | 5 | No | [1] | Spring |
+| Cat-cstrs-19 | 6 | 64 | 2 | 2 | 8 | No | [1] | G07 |
+| Cat-cstrs-20 | 2 | 100 | 2 | 7 | 10 | Yes | [1] | Car-side-impact |
+| Cat-cstrs-21 | 1 | 18 | 0 | 16 | 7 | No | [5] | Dembo-7 |
+| Cat-cstrs-22 | 1 | 12 | 0 | 12 | 3 | No | [5] | MAD |
+| Cat-cstrs-23 | 1 | 13 | 10 | 10 | 4 | No | [5] | Wong 3 |
+| Cat-cstrs-24 | 2 | 100 | 2 | 4 | 5 | No | [8] | Welded-beam |
+| Cat-cstrs-25 | 1 | 10 | 0 | 2 | 3 | No | [8] | Three-bar truss |
+| Cat-cstrs-26 | 2 | 36 | 2 | 2 | 6 | No | [4] | Three-hump |
+| Cat-cstrs-27 | 2 | 64 | 3 | 4 | 3 | No | [4] | McCormick |
+| Cat-cstrs-28 | 2 | 100 | 2 | 2 | 5 | No | [2] | G06 |
+| Cat-cstrs-29 | 4 | 81 | 4 | 6 | 3 | No | [4] | Shekel |
+| Cat-cstrs-30 | 2 | 49 | 1 | 7 | 3 | No | [9] | Ishigami |
+
+
+
 
 ## Best known feasible values: 13 June 2025
 
@@ -114,30 +131,34 @@ The following two tables present the characteristics of the unconstrained and co
 Combining Surrogate Strategies with MADS for Mixed-Variable Derivative-Free Optimization.
 Technical Report G-2017-70, Les cahiers du GERAD, 2017.
 
-[2] M. Halstrup.
+[2] N. I. M. Gould, D. Orban, and Ph. L. Toint.
+CUTEst: a Constrained and Unconstrained Testing Environment with Safe Threads for Mathematical Optimization.
+Computational Optimization and Applications, 60(3):545–557, 2015.
+
+[3] M. Halstrup.
 Black-Box Optimization of Mixed Discrete-Continuous Optimization Problems.
 PhD thesis, Technical University of Denmark, 2016.
 
-[3] M. Jamil and X.-S. Yang.
+[4] M. Jamil and X.-S. Yang.
 A literature survey of benchmark functions for global optimisation problems.
 International Journal of Mathematical Modelling and Numerical Optimisation, 4(2):150–194, 2013.
 
-[4] L. Lukšan and J. Vlček.
+[5] L. Lukšan and J. Vlček.
 Test Problems for Nonsmooth Unconstrained and Linearly Constrained Optimization.
 Technical Report V-798, ICS AS CR, 2000.
 
-[5] M. Munoz Zuniga and D. Sinoquet.
+[6] M. Munoz Zuniga and D. Sinoquet.
 Global optimization for mixed categorical-continuous variables based on Gaussian process models with a randomized categorical space exploration step.
 INFOR: Information Systems and Operational Research, 58(2):310–341, 2020.
 
-[6] J. Pelamatti, L. Brevault, M. Balesdent, E.-G. Talbi, and Y. Guerin.
+[7] J. Pelamatti, L. Brevault, M. Balesdent, E.-G. Talbi, and Y. Guerin.
 Efficient global optimization of constrained mixed variable problems.
 Journal of Global Optimization, 73(3):583–613, 2019.
 
-[7] T. Ray and K. M. Liew.
+[8] T. Ray and K. M. Liew.
 A Swarm Metaphor for Multiobjective Design Optimization.
 Engineering Optimization, 34(2):141–153, 2002.
 
-[8] S. Surjanovic and D. Bingham.
+[9] S. Surjanovic and D. Bingham.
 Virtual Library of Simulation Experiments: Test Functions and Datasets.
 Technical Report, Simon Fraser University, 2025.
