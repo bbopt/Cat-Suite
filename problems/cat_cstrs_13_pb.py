@@ -34,37 +34,60 @@ def cat_cstrs_13(X):
 
     # Penalty based on x_cat2
     p_val = np.zeros(X.shape[0])
+
     for i in range(X.shape[0]):
         if cat2[i] == "A":
-            p_val[i] = np.mean([1.1 * max(0, x) for x in X_con[i]])
+            p_val[i] = np.mean(
+                [1.1 * max(0, x) for x in X_con[i]]
+            )
         elif cat2[i] == "B":
-            p_val[i] = np.mean([-0.9 * min(0, x) for x in X_con[i]])
+            p_val[i] = np.mean(
+                [-0.9 * min(0, x) for x in X_con[i]]
+            )
         else:  # "C"
-            p_val[i] = np.mean([abs(x) for x in X_con[i]])
+            p_val[i] = np.mean(
+                [abs(x) for x in X_con[i]]
+            )
 
     # Objective
     f = np.abs(int1) + p_val
+
     for i in range(X.shape[0]):
         con = X_con[i]
+
         if cat1[i] == "smooth":
             f[i] += sum(
-                100 * (con[j + 1] - con[j] ** 2) ** 2 + int2[i] * (con[j] - 1) ** 2
+                100 * (con[j + 1] - con[j] ** 2) ** 2
+                + int2[i] * (con[j] - 1) ** 2
                 for j in range(3)
             )
-        else:  # nonsmooth
+
+        else:  # "nonsmooth"
             f[i] += sum(
-                100 * abs(con[j + 1] - con[j] ** 2) + 5 * int2[i] * abs(con[j] - 1)
+                100 * abs(con[j + 1] - con[j] ** 2)
+                + 5 * int2[i] * abs(con[j] - 1)
                 for j in range(3)
             )
 
     # Constraint g1
-    g1 = -np.linalg.norm(X_con, axis=1) + (int1 / 2) ** 2
+    g1 = -np.sqrt(
+        x1**2
+        + x2**2
+        + x3**2
+        + x4**2
+        + (int1 / 2.0)**2
+    )
+
     g1 += np.select(
         [cat2 == "A", cat2 == "B", cat2 == "C"],
-        [4.25**2, 5.5**2, 8**2]
+        [4.25**2, 5.5**2, 8.0**2]
     )
 
     g = [[g1[i]] for i in range(X.shape[0])]
-    h = np.array([(max(0, g1i))**2 for g1i in g1])
+
+    h = np.array([
+        max(0.0, g1i) ** 2
+        for g1i in g1
+    ])
 
     return f, h, g
