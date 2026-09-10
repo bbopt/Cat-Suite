@@ -60,7 +60,6 @@ def cat_23(X):
     # --- s(x^cat) mapping ---
     keys = np.stack([c1, c2, c3], axis=1)  # (n,3) strings
     s = np.array([_S_MAP[(k[0], k[1], k[2])] for k in keys], dtype=float)
-    s2 = s * s
 
     pi = np.pi
 
@@ -73,7 +72,7 @@ def cat_23(X):
 
         term = (
             5.0 * xi
-            + 0.3 * s2 * (xi ** 4)
+            + 0.3 * s * (xi ** 4)
             + (1.0 - xi) ** 2
             + s * np.sin(3.0 * pi * xi + (float(i) * pi) / 5.0)
         )
