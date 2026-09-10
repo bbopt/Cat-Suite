@@ -43,7 +43,7 @@ def cat_1(X):
     sum_con = np.sum(X_con, axis=1)
     penalty = (
         15 * np.abs(sum_con) * (X_cat[:, 1] == "positive")
-        + 15 * np.abs(sum_con - 1) * (X_cat[:, 1] == "negative")
+        + 15 * np.abs(np.sum(X_con - 1.0, axis=1)) * (X_cat[:, 1] == "negative")
         + 10 * np.abs(sum_con) * (X_cat[:, 1] == "neutral")
     )
 
