@@ -18,8 +18,9 @@ BOUNDS = {
 def cat_cstrs_7(X):
     """
     Cat-cstrs-7 based on the Goldstein problem from
-        J. Pelamatti, L. Brevault, M. Balesdent, E.-G. Talbi, and Y. Guerin. Efficient global optimization of
-        constrained mixed variable problems. Journal of Global Optimization, 73(3):583–613, 2019
+        J. Pelamatti, L. Brevault, M. Balesdent, E.-G. Talbi, and Y. Guerin.
+        Efficient global optimization of constrained mixed variable problems.
+        Journal of Global Optimization, 73(3):583–613, 2019.
 
     Parameters:
         X : ndarray of shape (n_samples, n_variables)
@@ -37,12 +38,22 @@ def cat_cstrs_7(X):
     cat2 = X_cat[:, 1]
     x1, x2 = X_con.T
 
-    # Table-based values for x3 and x4
+    # Table-based values for x3 and x4.
+    # cat1 determines x3, cat2 determines x4.
     table = {
-        ("A", "A"): (20, 20), ("A", "B"): (50, 20), ("A", "C"): (80, 20),
-        ("B", "A"): (20, 50), ("B", "B"): (50, 50), ("B", "C"): (80, 50),
-        ("C", "A"): (20, 80), ("C", "B"): (50, 80), ("C", "C"): (80, 80),
+        ("A", "A"): (20, 20),
+        ("A", "B"): (20, 50),
+        ("A", "C"): (20, 80),
+
+        ("B", "A"): (50, 20),
+        ("B", "B"): (50, 50),
+        ("B", "C"): (50, 80),
+
+        ("C", "A"): (80, 20),
+        ("C", "B"): (80, 50),
+        ("C", "C"): (80, 80),
     }
+
     keys = list(zip(cat1, cat2))
     x3 = np.array([table[k][0] for k in keys])
     x4 = np.array([table[k][1] for k in keys])
@@ -71,8 +82,13 @@ def cat_cstrs_7(X):
     )
 
     # Constraint
-    g1 = x3 * (np.sin(x1 / 100) ** 3) + x4 * (np.sin(x2 / 10) ** 3)
+    g1 = (
+        x3 * (np.sin(x1 / 100.0) ** 3)
+        + x4 * (np.sin(x2 / 10.0) ** 3)
+    )
+
     g = [[g1[k]] for k in range(X.shape[0])]
-    h = np.array([max(0, gk[0])**2 for gk in g])
+    h = np.array([max(0.0, gk[0]) ** 2 for gk in g])
 
     return f, h, g
+
