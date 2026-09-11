@@ -56,9 +56,9 @@ def cat_2(X):
         [np.sqrt(np.abs(con2) + 1), np.abs(con2), con2 ** 2 - 2]
     )
 
-    term1 = (1.5   - g_val + int1 * (1 - h_val))       ** 2
-    term2 = (2.25  - g_val + int2 * (1 - h_val**2))    ** 2
-    term3 = (2.625 - g_val + con3 * (1 - h_val**3))    ** 2
+    term1 = (1.5   - g_val + int1 * (1 - h_val)) ** 2
+    term2 = (2.25  - g_val + int2 * (1 - h_val) ** 2) ** 2
+    term3 = (2.625 - g_val + con3 * (1 - h_val) ** 3) ** 2
 
     f = term1 + term2 + term3
     h = np.zeros(X.shape[0])
